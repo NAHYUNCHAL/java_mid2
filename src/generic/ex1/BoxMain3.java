@@ -1,4 +1,4 @@
-package genric.ex1;
+package generic.ex1;
 
 public class BoxMain3 {
     static void main(String[] args) {
@@ -17,5 +17,10 @@ public class BoxMain3 {
         doubleBox.set(10.5);
         Double doublaValue = doubleBox.get();
         System.out.println("doublaValue = " + doublaValue);
+
+        //타입 추론: 생성하는 제네릭 타입 생략 가능
+        GenericBox<Integer> integerBox2 = new GenericBox<>();
+
+
     }
 }

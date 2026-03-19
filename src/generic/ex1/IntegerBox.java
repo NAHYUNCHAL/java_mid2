@@ -1,4 +1,4 @@
-package genric.ex1;
+package generic.ex1;
 
 public class IntegerBox {
 
