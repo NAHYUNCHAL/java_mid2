@@ -29,7 +29,7 @@ public class MyHashSetV1 {
         }
     }
 
-    public boolean add(int value) {
+    public boolean add(int value) {//추가
         int hashIndex = hashIndex(value);
         LinkedList<Integer> bucket = buckets[hashIndex];
         if (bucket.contains(value)) {
@@ -40,13 +40,13 @@ public class MyHashSetV1 {
         return true;
     }
 
-    public boolean contains(int searchValue) {
+    public boolean contains(int searchValue) {//중복확인
         int hashIndex = hashIndex(searchValue);
         LinkedList<Integer> bucket = buckets[hashIndex];
         return bucket.contains(searchValue);
     }
 
-    public boolean remove(int value) {
+    public boolean remove(int value) {//제거
         int hashIndex = hashIndex(value);
         LinkedList<Integer> bucket = buckets[hashIndex];
         boolean result = bucket.remove(Integer.valueOf(value));
