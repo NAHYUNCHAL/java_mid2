@@ -1,4 +1,4 @@
-package tutor.d4_7;
+package tutor.d4_07;
 
 public class Chair {
 
